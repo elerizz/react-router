@@ -1,0 +1,49 @@
+.CategoryListItem {
+  border: 2px solid rgb(7, 61, 0);
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  padding: 0.5rem;
+  width: 11rem;
+  margin: 1rem;
+  border-radius: .5rem;
+
+  &:hover {
+    background: #eee;
+  }
+
+  .thumbnail {
+    aspect-ratio: 1/1;
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+
+    &-wrapper {
+      flex: 0 0 3rem;
+    }
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .title {
+    line-height: 1;
+    margin: 0 0 0.5rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+  }
+}
